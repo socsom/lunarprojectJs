@@ -1,0 +1,188 @@
+body,html{
+	height:100%;padding:0px;margin:0px;
+	background-image: url("../img/fondo.png";)
+	}
+.a{
+
+	width:100%;
+	height:150px;
+	overflow:hidden;
+	position:fixed;
+	top:0px;
+	}
+
+.b{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background-image:url("../img/fondo.png");
+	}
+.c{
+	background-image:url("../img/fondo.png");
+	position:fixed;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	display:none;
+	z-index:1;
+	}
+.d{
+	position:fixed;
+	bottom:0px;
+	height:10%;
+	width:60%;
+	}
+#nave{
+	text-align:center;
+	position:fixed;
+	top:10%;
+	width:100%;
+	height:20%;
+	}
+#nave img{
+	height:100%;
+	}
+#cpanel{
+	width:auto;
+	height:auto;
+	margin: 0 auto;
+	display:inline-block;
+	float:left;
+	padding-left:0;
+	background-color: #000000;
+	color:#ADFF2F;
+	
+}
+
+#hidem,#showm{
+	width:auto;
+	display:inline-block;
+	float:right;
+	margin-top:5%;
+	margin-right:2%;
+	text-align:center;
+	background-color: #000000;
+	border-style: solid;
+	border-color: #006400;
+	color:#ADFF2F;
+	}
+
+#pausa{
+	display: none;
+}
+
+#gameOver{
+	width: 80%;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	display: none;
+	background-color:#ADFF2F;
+	text-align: center;
+	border-style: outset;
+}
+	
+#youWin{
+	width: 80%;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	display: none;
+	background-color:#ADFF2F;
+	text-align: center;
+	border-style: outset;
+}
+#menuFull{
+	width:100%;
+	height:100%;
+	text-align:center;
+	
+}
+#menuFull a { 
+	width:80%;
+	margin-left:20%;
+	margin-top:10%;
+	background-color: #000000;
+	text-decoration:none;
+    padding: 16px;
+    color:red;
+	border-style: solid;
+	display:block; }
+#menuFull a:link { 
+	width:50%;
+	margin-bottom:10%;
+	color:#ADFF2F; 
+	border-style: solid;
+	border-color: #006400;
+	background-color: #000000; }
+#menuFull a:visited {
+	color:#ADFF2F;
+	background-color:#000000; 
+	}
+    #menuFull a:hover { color:#ffffff; background-color:white; }
+    #menuFull a:active { color:#f0f0f0; background-color:black; }
+
+
+
+
+/*Lo que sigue hasta el final es para el menu desplegable. 
+	Ver también la parte de HTML y de Javascript*/
+/* Dropdown Button */
+.dropbtn {
+   	display:none;
+}
+
+/*Aqui se define la apariencia de las páginas "como se juega" y "about"*/
+.opciones{
+	background-image: url("../img/fondo.png");
+	color:#ADFF2F;
+	text-align:center;
+	margin-top:5%;
+	font-size:1em;
+}
+.opciones div{
+	text-align:justify;
+	margin-top:5%;
+	margin-right:5%;
+	
+}
+#instrucciones{
+	margin-left:5%;
+	padding-right:5%;
+	
+}
+#enlaces p{
+	margin-left:30%;
+	
+}
+#enlaces a{
+	color:#ADFF2F;
+
+}	
+#acercaDe {
+	margin-left:5%;
+	
+}
+#acercaDe a{
+	color:#ADFF2F;
+}
+
+/* Acción para volver desde las páginas "about" y "como se juega" a la principal*/
+
+.btnVolver{
+	width:auto;
+	background-color: #000000;
+    padding: 16px;
+    color:#ADFF2F;
+	border-style: solid;
+	border-color: #006400;
+	margin-left:40%;
+	margin-right:50%;
+	
+}
+.btnVolver:hover{
+	background-color:#ADFF2F;
+	color:#000000;
