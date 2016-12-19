@@ -1,6 +1,15 @@
 # lunarprojectJs
 Lunar Project unint HTML, CSS i Javascript
 
+#HTML
+A partir de l'esquelet bàsic que diferencia en tres zones verticals de la mateixa amplada i una horizontal fixa per al sól, 
+s'ha afegit el següent: 
+1. Un menú desplegable per a la versió normal (>961px) que enllaça amb els altres html del projecte i amb pàgines per aprendre.
+2. Un menú fixe per a la versió mòbil(<960px) que s'obre a pantalla completa i que mostra tres botons que enllacen amb el mateix contingut que abans. 
+3. S'han afegit 3 html al projecte, que són als quals enllacen els menus d'abans. Són: un how to, un about, i uns links.
+4. S'han afegit 3 pantalles que, mitjançant Javascript, ens informen de l'estat del joc. Més concretament: pausa, game over, Fi del joc.
+
+
 # VERSIÓ MÒBIL
 S'utilitza aquest codi per dispositius amb una resolució màxima de 960px. Se li asigna l'arxiu m.CSS 
 
