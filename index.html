@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Proyecto Lunar</title>
+ <meta name="description" content="Proyecto Lunar Lander en HTML, CSS y JavaScript">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel='stylesheet' media='screen and (min-width: 961px)' href='css/d.css'>
+ <link rel='stylesheet' media='screen and (max-width: 960px)' href='css/m.css'>
+ <script src="js/js.js"></script>
+</head>
+<body>
+<!--Bloque en el que situamos la nave-->
+	<div id="nave">
+		<img id=imgNaveOff src="img/naveOff.png" alt="img nave apagada">
+		
+	</div>
+<!--Bloque derecho-->
+	<div class="a">
+		<div id="showm">MENU</div>
+			<ul id="cpanel">
+				<div class="controlesNave">Velocidad:<br><span id="velocidad">100</span> m/s</div>
+				<div class="controlesNave">Fuel:<br><span id="fuel">100</span> %</div>
+				<div class="controlesNave">Altura:<br><span id="altura">60</span> m</div>
+				
+			</ul>
+		</div>
+<!--Bloque central-->
+	<div class="b">b</div>
+<!--Bloque izquierdo-->
+	<div class="c">
+		<div id="hidem">JUGAR</div>
+		<div id=menuFull>
+				<a href="#" onclick= "comoJugar()">Cómo jugar</a>
+				<a href="#" onclick= "aprendeLink()">Aprende tú</a>
+				<a href="#" onclick= "acercaDe()">Acerca de</a>
+				
+		</div>
+<!--El siguiente div es para el menu desplegable. 
+Ver también la parte de CSS y de Javascript-->
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">MENU</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#" onclick="pararRetomar()">Play</a>
+					<a href="#" onclick= "comoJugar()">Cómo jugar</a>
+					<a href="#" onclick= "acercaDe()">Acerca de</a>
+					<a href="#" onclick="aprendeLink()">Aprende tú</a>
+			</div>
+		</div>
+	</div>
+	<div id="pausa">
+		<h2>¡PAUSA!</h2>
+		Presiona <b>PLAY</b> en el menú para continuar<br>
+	</div>
+		
+<!--Pantalla que sale mediante Javascript al perder-->
+	<div id="gameOver">
+		<h2>¡ESTÁS MUERTO!</h2>
+		Has aterrizado a más de 5 m/s y has reventado la nave y a tus compañeros!<br>
+		Menos mal que uno de ellos habia inventando los viajes en el tiempo...<br><br>
+		<button onclick="retryGame();"><h3>¿Volver a intentarlo?</h3></button>
+	
+	</div>
+<!--Pantalla que sale mediante Javascript al ganar-->
+	<div id="youWin">
+		<h2>¡BIEN HECHO!</h2>
+		Has salvado a tus compañeros, a la nave y a tí mismo!<br>
+		Has burlado a la muerte, sí! Pero, ¿hasta cuando?<br><br>
+		<button onclick="retryGame();"><h3>¿Retar a la muerte?</h3></button>
+	</div>
+<!--Parte baja fijada mediante CSS-->
+	<div class="d">
+		<img id="imgLuna" src="img/suelo.png" alt="img luna">
+	</div>
+	
+</div>
+</body>
+</html>
